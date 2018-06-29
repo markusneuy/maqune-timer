@@ -1,0 +1,7 @@
+@import './css/color.css';
+
+body {
+  background-color: var(--background);
+  font-family: system-ui; /* stylelint-disable-line font-family-no-missing-generic-family-keyword  */
+}
+

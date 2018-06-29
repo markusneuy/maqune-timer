@@ -1,0 +1,16 @@
+{
+    "presets": [ "@babel/preset-env" ],
+    "ignore": [
+        "node_modules"
+    ],
+    "env": {
+        "production": {
+            "presets": ["minify"],
+            "ignore": ["*.spec.js"],
+            "plugins": ["transform-remove-console", "transform-remove-debugger"]
+        },
+        "development": {
+            "ignore": ["*.spec.js"]
+        }
+    }
+}

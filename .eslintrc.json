@@ -1,0 +1,43 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "plugins": [ "jest" ],
+    "extends": "airbnb-base",
+    "rules": {
+        "wrap-iife": [
+            "error",
+            "inside",
+            {
+                "functionPrototypeMethods": false
+            }
+        ],
+        "arrow-parens": [
+            "error",
+            "always",
+            {
+                "requireForBlockBody": true
+            }
+        ],
+        "no-restricted-syntax": [
+            "error",
+            {
+                "selector": "LabeledStatement",
+                "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
+            },
+            {
+                "selector": "WithStatement",
+                "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+            }
+        ],
+        "strict": [
+            "error",
+            "global"
+        ]
+    }
+}
